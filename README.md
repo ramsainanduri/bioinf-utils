@@ -26,13 +26,13 @@ pip install -r requirements.txt
 GTF to BED Conversion
 Convert a GTF file to a BED file with default settings:
 ```bash
-python scripts/gtf_to_bed_converter.py --input examples/example.gtf --output examples/example_output.bed --feature gene
+python scripts/gtf_to_bed_converter.py --gtf examples/example.gtf --output examples/example_output.bed --feature gene
 ```  
 
 Advanced usage:
 ```bash
 python scripts/gtf_to_bed_converter.py \
-    --input examples/example.gtf \
+    --gtf examples/example.gtf \
     --output examples/example_output.bed \
     --feature exon \
     --filter_key gene_type \
